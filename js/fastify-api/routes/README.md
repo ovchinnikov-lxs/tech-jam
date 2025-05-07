@@ -13,7 +13,7 @@ plugin](https://fastify.dev/docs/latest/Reference/Plugins/), it is
 encapsulated (it can have its own independent plugins) and it is
 typically stored in a file; be careful to group your routes logically,
 e.g. all `/users` routes in a `users.js` file. We have added
-a `root.js` file for you with a '/' root added.
+a `root.js`file for you with a '/' root added.
 
 If a single file becomes too large, create a folder and add a `index.js` file there:
 this file must be a Fastify plugin, and it will be loaded automatically
@@ -26,4 +26,5 @@ functionality into the `plugins` folder, and share it via
 [decorators](https://fastify.dev/docs/latest/Reference/Decorators/).
 
 If you're a bit confused about using `async/await` to write routes, you would
-better take a look at [Promise resolution](https://fastify.dev/docs/latest/Reference/Routes/#promise-resolution) for more details.
+better take a look at [Promise resolution](https://fastify.dev/docs/latest/Reference/Routes/#promise-resolution) for
+more details.

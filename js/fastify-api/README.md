@@ -1,23 +1,52 @@
-# Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
-This project was bootstrapped with Fastify-CLI.
+# Fastify Chat API
 
-## Available Scripts
+A simple real-time chat server built with Fastify, WebSocket, and Redis. This project demonstrates how to create a basic WebSocket server with multi-client support using Fastify and Redis for message broadcasting.
 
-In the project directory, you can run:
+## 📦 Features
 
-### `npm run dev`
+* Real-time chat with multiple clients
+* WebSocket communication
+* Redis Pub/Sub for message distribution
+* Automated tests for multi-client communication
 
-To start the app in dev mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-### `npm start`
+## 🚀 Getting Started
 
-For production mode
+### Prerequisites
 
-### `npm run test`
+Make sure you have the following installed:
 
-Run the test cases.
+* Node.js (v20+)
+* Docker (for Redis)
 
-## Learn More
+### Install dependencies
 
-To learn Fastify, check out the [Fastify documentation](https://fastify.dev/docs/latest/).
+```bash
+npm install
+```
+
+### Run Redis
+
+```bash
+docker run -d --name fastify-chat-redis -p 6379:6379 redis
+```
+
+### Run the server
+
+```bash
+npm run dev
+```
+
+The server should now be running at **[http://localhost:3000](http://localhost:3000)**.
+
+---
+
+## 🧪 Running Tests
+
+### Run all tests
+
+```bash
+npm test
+```
+---
