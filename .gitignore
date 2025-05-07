@@ -1,0 +1,70 @@
+# Node.js
+node_modules/
+dist/
+build/
+*.log
+*.tsbuildinfo
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+.env.local
+
+# Go
+*.exe
+*.out
+*.test
+vendor/
+
+# C++
+*.o
+*.obj
+*.exe
+*.a
+*.lib
+*.dll
+*.so
+
+# Docker
+**/Dockerfile*
+**/docker-compose*
+**/*.tar
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+logs/
+*.log
+*.tmp
+
+# Misc
+*.lock
+*.bak
+*.orig
+*.rej
+
+# Git
+.gitignore
+.gitattributes
+
+# Ignore build artifacts
+**/build/
+**/dist/
