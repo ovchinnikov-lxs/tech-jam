@@ -1,6 +1,6 @@
 'use strict';
 
-const { test } = require('node:test');
+const {test} = require('node:test');
 const assert = require('assert');
 const Fastify = require('fastify');
 const WebSocket = require('ws');
@@ -12,7 +12,7 @@ test('Improved multi-client WebSocket communication', async (t) => {
     app.register(pubsubPlugin);
     app.register(require('../../routes/chat'));
 
-    const address = await app.listen({ port: 0 });
+    const address = await app.listen({port: 0});
     const port = address.split(':').pop();
 
     const clientCount = 3;
@@ -67,7 +67,7 @@ test('Improved multi-client WebSocket communication', async (t) => {
             });
         });
 
-        clients.push({ ws, messagePromise });
+        clients.push({ws, messagePromise});
     }
 
     // Ждем, пока все клиенты получат все сообщения

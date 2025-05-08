@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = async function (fastify, opts) {
-    fastify.get('/', { websocket: true }, (connection, req) => {
+    fastify.get('/', {websocket: true}, (connection, req) => {
         console.log('Client connected');
 
         connection.on('message', (message) => {

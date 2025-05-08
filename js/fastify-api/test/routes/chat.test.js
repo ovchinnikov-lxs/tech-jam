@@ -1,6 +1,6 @@
 'use strict';
 
-const { test } = require('node:test');
+const {test} = require('node:test');
 const assert = require('assert');
 const Fastify = require('fastify');
 const WebSocket = require('ws');
@@ -12,7 +12,7 @@ test('Chat WebSocket', async (t) => {
     app.register(pubsubPlugin);
     app.register(require('../../routes/chat'));
 
-    const address = await app.listen({ port: 0 });
+    const address = await app.listen({port: 0});
     const port = address.split(':').pop();
 
     const ws = new WebSocket(`ws://localhost:${port}`);

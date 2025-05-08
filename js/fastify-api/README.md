@@ -1,6 +1,7 @@
 # Fastify Chat API
 
-A simple real-time chat server built with Fastify, WebSocket, and Redis. This project demonstrates how to create a basic WebSocket server with multi-client support using Fastify and Redis for message broadcasting.
+A simple real-time chat server built with Fastify, WebSocket, and Redis. This project demonstrates how to create a basic
+WebSocket server with multi-client support using Fastify and Redis for message broadcasting.
 
 ## 📦 Features
 
@@ -49,4 +50,5 @@ The server should now be running at **[http://localhost:3000](http://localhost:3
 ```bash
 npm test
 ```
+
 ---
