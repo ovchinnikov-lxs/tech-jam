@@ -1,6 +1,7 @@
 # Nuxt 3 + Vercel (SSR) Project
 
-This project is a Nuxt 3 application deployed on Vercel with server-side rendering (SSR) enabled. It includes a server-side endpoint at `/server-test` and a main homepage.
+This project is a Nuxt 3 application deployed on Vercel with server-side rendering (SSR) enabled. It includes a
+server-side endpoint at `/server-test`, `/about-me` parsing my portfolio (SWR + Redis) and a main homepage.
 
 ## 🛠️ Project Setup
 
